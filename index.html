@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Mocha Tests</title>
+<link rel="stylesheet" href="node_modules/mocha/mocha.css" />
+</head>
+
+<body>
+<div id="mocha"></div>
+
+<script src="node_modules/chai/chai.js"></script>
+<script src="node_modules/mocha/mocha.js"></script>
+
+<script>
+    mocha.setup({
+        ui: "bdd"
+    });
+</script>
+
+<script type="module" src="test/_echo.js"></script>
+
+<!-- Need to load this as a module so that it doesn't execute until after our test has been loaded and registered by Mocha -->
+<script type="module">
+    window.expect = chai.expect;
+    mocha.run();
+</script>
+
+</body>
+</html>

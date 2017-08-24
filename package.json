@@ -1,0 +1,27 @@
+{
+  "name": "module_template",
+  "version": "1.0.0",
+  "description": "Template for starting a new module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "None"
+  },
+  "keywords": [
+    "Template module"
+  ],
+  "author": "Michael Paul Docker",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
